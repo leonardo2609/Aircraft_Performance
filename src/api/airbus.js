@@ -1,4 +1,4 @@
-async function getAirportInformation() {
+async function getAirportMetarInformation() {
   const inputIcao = document.getElementById("airport-ICAO").value.trim().toUpperCase();
 
   if (inputIcao === "" || inputIcao.length !== 4) {
@@ -42,4 +42,8 @@ async function getAirportInformation() {
     btn.innerText = originalText;
     btn.disabled = false;
   };
+}
+
+function getAirportInformation() {
+  
 }
